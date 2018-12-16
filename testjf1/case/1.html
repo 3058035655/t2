@@ -1,0 +1,1626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="互联网金融，鸿坤金服，投资，理财，个人理财，理财收益，鸿坤，鸿坤财富，鸿坤地产，银行理财" />
+		<meta name="description" content="鸿坤金服定位为社区“金融超市”，服务于特定社区及特定人群，被评定为国家AAA级信用等级平台、国家高新技术企业、诚信兴商示范单位、中国经济创新示范企业。 " />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<link href="images/p2pimages/logo.ico" rel="shortcut icon" type="image/x-icon"/>
+		<title>鸿坤金服——社区金融超市</title>
+		<link rel="stylesheet" type="text/css" href="/css/yrtz/css/new_common.css?v=172309"/>
+<link rel="stylesheet" type="text/css" href="/css/yrtz/css/new_index.css?v=172309"/>        <!--<link rel="stylesheet" type="text/css" href="/css/yrtz/css/new_index.css"/>-->
+        <link rel="stylesheet" type="text/css" href="css/yrtz/css/touziindex.css?v=172301"/>
+		<script type="text/javascript" src="/scripts/security.js"></script>
+		<script type="text/javascript" src="/scripts/jquery-latest.js"></script>
+		<script type="text/javascript" src="/scripts/jquery/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="/scripts/slides.min.jquery.js"></script>
+		<script type="text/javascript" src="/scripts/validform/js/Validform_v5.3.2_min.js"></script>
+		<script type="text/javascript" src="/scripts/validform/js/Validform_Datatype.js"></script>
+		<script type="text/javascript" 	src="/scripts/XYTips/jquery.XYTipsWindow.2.8.js"></script>
+		<script type="text/javascript">
+			//首页客服手机号变更
+			/*window.onload = function(){
+			    var now = new Date();
+			    var time = new Date("2018-03-15 00:00:00");
+			    if(now >= time){
+			    	$('.hd_top_lt').find('li i').html("客服：400-900-9630 或 400-099-0229");
+			    	$('.footer_right').find('p').eq(2).html("400-099-0229");
+			    	$('.s-div6').find('p span').eq(1).html("400-099-0229");
+			    	$('.hb_show').find('p').html("400-099-0229");
+			    	$('.chongzhitx').find('p').eq(3).html("400-099-0229");
+			    }else{
+			    	$('.hd_top_lt').find("li i").html("客服：400-900-9630 或 400-606-9610");
+			    	$('.footer_right').find('p').eq(2).html("400-606-9610");
+			    	$('.s-div6').find('p span').eq(1).html("400-606-9610");
+			    	$('.hb_show').find('p').html("400-606-9610");
+			    	$('.chongzhitx').find('p').eq(3).html("400-606-9610");
+			    }
+			}*/
+			$(document).ready(function(){		
+				$(".fc_close").click(function(){
+					$("#fc_hide").hide();
+				});
+				
+			});
+			$(function(){
+				$('#slides').slides({
+				   effect: 'slide',
+				   callback: {
+				      loaded: function(number) {
+				        // Do something awesome!
+				        // Passes start slide number
+				        alert('loaded '+number);
+				      },
+				      start: function(number) {
+				        // Do something awesome!
+				        // Passes slide number at start of animation
+				        alert('start '+number);
+				      },
+				      complete: function(number) {
+				        alert('complete '+number);
+				        // Do something awesome!
+				        // Passes slide number at end of animation
+				      }
+				  }
+				});
+			});	
+			$(function(){			
+				$('#slides2').slides({
+					effect: 'slide'
+				});
+				$('#slides2').find('.pagination').css("top","445px");			
+				
+			});	
+			$(function(){
+				$('#slides3').slides({
+					effect: 'slide'
+				});
+			});	
+			$(function(){
+				$('#slides3').slides({
+					effect: 'slide'
+				});
+			});	
+			<!-- 文字滚动JS -->
+			function AutoScroll(obj){
+				$(obj).find("ul:first").animate({
+					marginTop:"-44px"
+				},600,function(){
+					$(this).css({marginTop:"0px"}).find("li:first").appendTo(this);
+				});
+			}
+			$(document).ready(function(){
+				setInterval('AutoScroll("#scrollDiv")',3000);
+			});
+			<!--banner-->
+		    function banner(){	
+				var bn_id = 0;
+				var bn_id2= 1;
+				var speed33=5000;
+				var qhjg = 1;
+			    var MyMar33;
+				$("#banner .d1").hide();
+				$("#banner .d1").eq(0).show();
+				if($("#banner .d1").length>1)
+				{
+					$("#banner_id li").eq(0).addClass("nuw");
+					function Marquee33(){
+						bn_id2 = bn_id+1;
+						if(bn_id2>$("#banner .d1").length-1)
+						{
+							bn_id2 = 0;
+						}
+						$("#banner .d1").eq(bn_id).css("z-index","1");
+						$("#banner .d1").eq(bn_id2).css("z-index","2");
+						$("#banner .d1").eq(bn_id2).show();
+						$("#banner .d1").eq(bn_id).hide();
+						$("#banner_id li").removeClass("nuw");
+						$("#banner_id li").eq(bn_id2).addClass("nuw");
+						bn_id=bn_id2;
+					};
+				
+					MyMar33=setInterval(Marquee33,speed33);
+					
+					$("#banner_id li").click(function(){
+						var bn_id3 = $("#banner_id li").index(this);
+						if(bn_id3!=bn_id&&qhjg==1)
+						{
+							qhjg = 0;
+							$("#banner .d1").eq(bn_id).css("z-index","2");
+							$("#banner .d1").eq(bn_id3).css("z-index","1");
+							$("#banner .d1").eq(bn_id3).fadeIn();
+							$("#banner .d1").eq(bn_id).fadeOut("slow",function(){qhjg = 1;});
+							$("#banner_id li").removeClass("nuw");
+							$("#banner_id li").eq(bn_id3).addClass("nuw");
+							bn_id=bn_id3;
+						}
+					})
+					$("#banner_id").hover(
+						function(){
+							clearInterval(MyMar33);
+						}
+						,
+						function(){
+							MyMar33=setInterval(Marquee33,speed33);
+						}
+					)	
+				}
+				else
+				{
+					$("#banner_id").hide();
+				}
+			}
+			
+			$(document).ready(function(){
+				$(".gg_close").click(function(){
+					$("#s11_gg").hide();
+				});
+			});
+			
+	<!-- 下拉广告JS -->
+/**   var time = 500;
+    var h = 0;
+    function addCount()
+    {
+        if(time>0)
+        {
+            time--;
+            h = h+5;
+        }
+        else
+        {
+            return;
+        }
+        if(h>350)  //高度
+        {
+            return;
+        }
+        document.getElementById("ads").style.display = "";
+        document.getElementById("ads").style.height = h+"px";
+        setTimeout("addCount()",30); 
+    }
+    
+    var T = 350;
+    var N = 350; //高度
+    function noneAds()
+    {
+        if(T>0)
+        {
+            T--;
+            N = N-5;
+        }
+        else
+        {
+            return;
+        }
+        if(N<0)
+        {
+            document.getElementById("ads").style.display = "none";
+            return;
+        }
+        
+        document.getElementById("ads").style.height = N+"px";
+        setTimeout("noneAds()",30); 
+    }**/
+    
+
+window.onload=clickclose;
+   /** function aHide(){
+		$(".Height").hide();
+	}
+    window.onload = function showAds()
+    {
+        addCount();
+        setTimeout("noneAds()",4000); //停留时间自己适当调整
+    }
+    **/
+    </script>
+	</head>
+	<body class="pr2" style="position:relative;background:#f5f5f5;">
+	
+	 <!-- <div id="note" style="width:100%;height:100%;position:absolute;top:0;z-index:20000;display:none;">
+	      <div style="background:black;overflow:hidden;width:100%;height:100%;opacity:0.8;position:absolute;top:0;z-index:20001;"></div>
+	      <div class="c_close" onclick="closeclick()" style="width:50px;height:50px;position:fixed;z-index:20005;top:50px;cursor:pointer;left:32%;"></div>
+	      <img src="css/yrtz/images/hkjf/ad.png" style="text-align:center;overflow:hidden;width:70%;left:15%;position:fixed;z-index:20002;top:50px;display:block;">
+      </div>-->
+	<div id="ads" style="margin:auto; display:none; width:100%; top:0px; height:0px; border:solid 0px #000; overflow:hidden; text-align:center;">
+		<a href="activityController.do?method=toXChd" class="ads_img"></a>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+		$(".nav_c").find(".nav_c li").eq(4).css("background","#ccc");
+	});
+</script>
+<!-- 二维码弹出层 JS star-->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#weixinLink").click(function(){
+					$("#dialog").show();
+					$("#ewm").show();
+				});
+				$(".close").click(function(){
+					$("#dialog").hide();
+					$("#ewm").hide();
+				});
+			});
+			
+		</script>
+		<!-- 二维码弹出层 JS end-->
+<div class="head">
+ <input type="hidden" name="csrftoken" id="csrftoken" value="53a53083-8c30-4367-9ab9-f104f0434ff5" />
+<div class="hkjf_title">
+
+	<div class="warp clearfix" style="border-bottom:1px solid #f19a33;">
+			<div class="logo fl" style="position:relative;">
+				<!-- 20171027新替换logo -->
+				 <a href="index.do?method=getIndexPage" title="鸿坤金服">
+						<img src="/css/yrtz/images/hkjf/weblogotwo.png" style="width:340px;height:46px;">
+				</a>
+			</div>
+	</div>		
+</div>
+	<!-- 导航内容 开始 -->
+	<div class="nav">
+		<div class="warp">
+			<ul class="nav_c">
+<li><a class="nav_selected"
+				 href="index.do?method=getIndexPage">
+			首页</a></li><li><a class=""
+			 href="index.do?method=getIndexPage#privateAnchor">
+			私募基金</a></li><li><a class=""
+			 href="index.do?method=getIndexPage#overseaAnchor">
+			海外基金</a></li><li><a class=""
+			 href="index.do?method=getIndexPage#trustAnchor">
+			信托产品</a></li><li><a class=""
+			 href="index.do?method=getIndexPage#houseAnchor">
+			房产投资</a></li>			</ul>
+		</div>
+	</div>
+</div>
+<!--<script>
+	window.onload=function(){
+		var rurl = "";
+		var links = document.getElementsByTagName("link");
+		var link = {};
+		for(var i=0;i<links.length;i++){
+			link = links[i];
+			if(link.rel === "stylesheet"){
+			rurl = link.href+ '?v='+ Math.random().toFixed(6);
+			link.setAttribute("href",rurl);
+			} 
+		}
+	}
+
+</script>-->
+<script type="text/javascript"> 
+     $(document).ready(function(){
+    	  //积分商城、手机App、微信二维码颜色
+          $(".hd_top_lt").find("li").eq(0).mouseover(function(){
+        	  $(this).find("a img").attr("src","css/yrtz/images/hkjf/ic_shouyeyemeijifenshangcheng.png");
+          })
+           $(".hd_top_lt").find("li").eq(0).mouseout(function(){
+        	  $(this).find("a img").attr("src","css/yrtz/images/gqIndex/ic_yemei_jshangcheng.png");
+          })
+          $(".hd_top_lt").find("li").eq(1).mouseover(function(){
+        	  $(this).find(".qkd_ewm").show();
+     		  $(".tel_a").css("color","#f39200");
+        	  $(this).find("a img").attr("src","css/yrtz/images/hkjf/ic_shoujideAPP.png");
+          })
+          $(".hd_top_lt").find("li").eq(1).mouseout(function(){
+        	  $(this).find(".qkd_ewm").hide();
+        	  $(".tel_a").css("color","#666");
+        	  $(this).find("a img").attr("src","css/yrtz/images/gqIndex/ic_yemei_shouji.png");
+          })
+    	 
+    	 $(".hd_top_lt").find("li").eq(2).mouseover(function(){
+    		 $(this).find(".qkd_ewm").show();
+    		 $(".ewm_a").css("color","#f39200");
+    		 $(".ewm_a img").attr("src","css/yrtz/images/hkjf/ic_wx.jpg");
+ 
+    	 })
+         $(".hd_top_lt").find("li").eq(2).mouseout(function(){
+        	 $(".ewm_a").css("color","#666");
+    		 $(".ewm_a img").attr("src","css/yrtz/images/gqIndex/ic_yemei_weixin.png");
+    		$(this).find(".qkd_ewm").hide();
+         })
+       	 $("#search").click(function(){
+       		$("#searchForm").submit();
+	     })
+		
+     });
+  	// 固定导航栏
+	$(function () {
+           var topBarHeight = $(".hkjf_title").height();
+           console.log(topBarHeight);
+           $(window).scroll(function () {
+               var docSccrollTop = $(document).scrollTop();
+               if(docSccrollTop > topBarHeight){
+                   $(".nav").css({"position":"fixed","top":0});
+                   $(".ht_300").css("margin-top",75);
+               }else{
+                   $(".nav").css({"position":"static"});  /*静态定位*/
+                   $(".ht_300").css("margin-top",0);
+               }
+           });
+       });
+</script> <!-- banner内容 开始 -->
+<div class="flashImg ht_300 pr2">
+	<div class="slider-wrap" style="background:url(https://www.hongkunjinfu.com/yr-ad-images-pr/imageUpload/adwordcircle/20181012153129347.jpg) center no-repeat;">
+	    <div class="banner3" id="banner" >
+	            <!-- <a href="" class="d1" style="background:url(https://www.hongkunjinfu.com/yr-ad-images-pr/imageUpload/adwordcircle/20181012153129347.jpg) center no-repeat;"></a> -->
+	            <a href="" class="d1" style="background:url(https://www.hongkunjinfu.com/yr-ad-images-pr/imageUpload/adwordcircle/20181012153129347.jpg) center no-repeat;" target="_blank"></a>
+	        <div class="d2" id="banner_id">
+	            <ul>
+	               	<li></li>
+	            </ul>
+	        </div>
+        </div>
+        <script type="text/javascript">banner()</script>
+	</div>
+	<!-- 登录窗口 开始 -->		
+	<div class="registerBody">
+	   <div>
+		<form id="loginform" class="loginform" action="login.do?method=indexlogin" method="post">
+	            <!--登录的小窗口开始-->
+				<div id='logindiv' class="login_cont fr box-back">
+	                <div class="login_cont_c">
+	    				<h1>欢迎登录</h1>
+	    				<input id="login" name="login" type="text" tabindex="1" class="login_input" value="请输入您的手机号">
+	    				<input id="txt2" type="text"  tabindex="2" class="login_input" value="请输入您的密码">
+	        	        <input type="password" name="password" id="password" class="login_input" style="display:none;" />
+	        	        <input type="hidden" id="pwdLevel" name="pwdLevel" />
+	    				<div class="forget_password">
+						<div id="info" class="info_error"></div>
+						<a href="loginController.do?method=toupdatePwd" style="display:block;float:right;">忘记密码?</a>
+						<div class="clear"></div>
+					</div>
+	    				<div class="login_button login_gradient" onclick="submitForm()">立即登录</div>
+	    				
+	    				<p class="login_text"></p>
+	                	 <p class="login_text" style="margin-top:14px;line-height: 68px;"><a href='javascript:;'  class="toregit"></a></p>
+	                </div>
+	                <!--<div class="login_cont_bottom"></div>-->
+				</div>
+				<!--登录的小窗口结束-->
+<link rel="stylesheet" type="text/css" href="/css/yrtz/css/new_common.css?v=172309"/>
+<link rel="stylesheet" type="text/css" href="/css/yrtz/css/new_index.css?v=172309"/><script charset="utf-8" 		src="/scripts/kindeditor/kindeditor.js"></script>
+<script charset="utf-8" 		src="/scripts/kindeditor/lang/zh_CN.js"></script> 
+<script charset="utf-8" 		src="/scripts/kindeditor/plugins/code/prettify.js"></script>
+<script type="text/javascript" 	src="/scripts/jquery/jquery.livequery.min.js"></script>
+<script type="text/javascript" 	src="/scripts/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" 	src="/scripts/common.js"></script>
+<script type="text/javascript" 	src="/scripts/loginValid.js"></script>
+<script type="text/javascript" 	src="/scripts/XYTips/jquery.XYTipsWindow.2.8.js"></script>
+<link rel="stylesheet" type="text/css" href="/scripts/XYTips/style.css?v=172301"/>
+<!--[if IE 6]>
+<script type="text/javascript" 	src="DD_belatedPNG_0.0.8a.js"></script>
+<script type="text/javascript">DD_belatedPNG.fix('div,ul,li,.pic,.ico_invest1');</script>
+<![endif]-->
+<form class="loginform" action="regist.do?method=userRegist" method="post" name="registForm" id="registForm">
+<!--登录继续页面开始-->
+<div id='regist2div' class="login_cont fr box-regist">
+    <div class="login_cont_c">
+    	<p><a href="javascript:;" class="wj_back" onclick="backToRegist()">＜返回</a></p>
+        <ul>
+        	<li class="clearfix">
+          		<input id="verify_code" type="text"    name="verify_code" tabindex="1" class="Login_in_small" value="请输入计算结果">
+          		<img class="jisuanqi" title="点击更换" onclick="javascript:refreshs(this);" src="regist/ImageCheckCodeServlet"/>
+            </li>
+        </ul>
+        <ul>
+        	<li class="clearfix"> 
+             	<input id="randCode"  name="randCode" type="text"  tabindex="2" class="Login_in_small" value="请输入您的6位验证码">
+             	<a href="javascript:void(0);" class="jisuanqi" id="sendSmsBtn" onclick="sendSmsCode()">获取验证码</a><span id="waitTime" />
+             </li>
+         </ul>
+		<input class="login_in" id="commendPhone" name="commendPhone" type="text" value="请输入推荐码(推荐人手机号后8位)" maxlength="12" />
+		<div class="forget_password">
+		<div id="info" class="info_error"></div>
+		<div class="clear"></div>
+	</div>
+	<ul style="height:34px;">
+	        <input id="check"  type="checkbox" checked="checked" value="" class="fl check_img a_ch"/>
+	        <p class="wj">
+	           	<span>注册代表您阅读并同意</span><a href="javascript:;" id="contract" class="">《鸿坤金服网站服务协议》</a>
+	           	<a href="javascript:void(0)" id="toFxinvest">《定向及合格投资者认定》</a>
+	        <span id="err_check" class="Validform_checktip"></span>
+	    	</p>
+	    </ul>
+	    <!--  <div class="div_array">注册代表您阅读并同意<a href="javascript:;" id="cont" style="color:#f39200;">《用户协议》</a></div>-->
+	    <div id="error2" class="info_error_bak" style="color:red"></div>
+	    <div id="btn_sub" class="login_button login_gradient" onclick="registSubmit()" style="margin-bottom: 27px;">完成</div>
+	</div>
+    <!--<div class="login_cont_bottom"></div>-->
+</div>
+<!--登录继续页面结束-->	
+<!--第一个小窗口默认登录或注册开始-->
+<div id='regist1div' class="login_cont fr box-front">
+    <div class="login_cont_c">
+		<h1>快速注册</h1>
+		<input id="loginregister" class="login_input_small" name="loginregister"  tabindex="1"  type="text" value="请输入您的手机号"/>
+		<input type="text" class="login_input_small" tabindex="2" id="txt3" value="请设置密码(6至16位字母数字组合)"/>
+		<input id="passwordresgister" class="login_input_small" name="passwordresgister" type="password" style="display:none" datatype="psnew6-16" nullmsg="请输入登录密码!" errormsg="请输入6至16位字母数字组合!"/>
+		<div class="forget_password">
+			<div id="info" class="info_error"></div>
+			<div class="clear"></div>
+		</div>
+		<div id="error1" class="info_error_bak" style="color:red"></div>
+		<div class="login_button login_gradient" onclick="toregister2()" style="margin-top:40px;">立即注册</div>
+		<p class="login_con" style="margin-top:12px;font-size:14px;line-height: 68px;height:68px;"><a href="javascript:;" onclick="toLogin()" style="color:#3283e0;">已注册，我要登录</a></p>
+		<!-- <p style="height:7px;"></p> -->
+    </div>
+   <!-- <div class="login_cont_bottom"></div>-->
+</div>
+<!--登录或注册结束-->
+
+<input type="hidden" name="token"     id="token"      value="" />
+<input type="hidden" name="modulus"   id="modulus"    value="" />
+<input type="hidden" name="exponent"  id="exponent"   value="" />
+<input type="hidden" name="newToken"  id="newToken"   value="" />
+<input type="hidden" name="phoneId"   id="phoneId"    value="" />
+<input type="hidden" name=""          id="verifyFlag" value="" />
+<input type="hidden" name="code"      id="code"       value="" />
+<input type="hidden" name="utype"     id="utype"      value="" />
+<input type="hidden" name="csrftoken" id="csrftoken"  value="" />
+<input type="hidden" name="pwdLevel"  id="pwdLevel" />
+</form>
+</body>
+<script type="text/javascript">
+function clearmsg(){
+		$("#error1").html("");
+		$("#error2").html("");
+}
+function registSubmit(){
+		if(before($("#registForm"))){
+			var token        = $("#token").val();
+			var code         = $("#code").val();
+			var phoneId      = $("#phoneId").val();
+			var csrftoken    = $("#csrftoken").val();
+			var login        = $("#loginregister").val();
+			var password     = $("#passwordresgister").val();
+			var commendPhone = $("#commendPhone").val();
+			if("请输入推荐码(推荐人手机号后8位)" == commendPhone){
+				commendPhone = "";
+			}
+			var verify_code = $("#verify_code").val();
+			var randCode = $("#randCode").val();
+			var answers = window.sessionStorage.getItem("userInvestAnswer", answers);
+			var scores = window.sessionStorage.getItem("userInvestScores", scores);
+			$.ajax({
+				type 	: "POST",
+				cache  	: false,
+				url 	: "regist.do?method=userRegist",
+				data	: "&type=201&code="+code+"&token="+token+"&phoneId="+phoneId+"&csrftoken="+csrftoken+"&login="+login+"&password="+password+"&commendPhone="+commendPhone+"&verify_code="+verify_code+"&randCode="+randCode+"&answers="+answers+"&scores="+scores,
+				asyn	: false,
+				dataType: "json",
+				success : function(data) {
+								if("ok"==data.msg){
+									location.reload();
+								}else{
+									$("#error2").html(data.msg);
+								}
+						}
+				});
+		}
+}
+function toregister2(){
+		loginBlur();
+		if(phoneCheckFlg == 1) {
+			$("#error1").html("手机号码未输入!");
+			return;
+		} else if(phoneCheckFlg == 2) {
+			$("#error1").html("手机号码格式错误!");
+			return;
+		} else if(phoneCheckFlg == 3) {
+			$("#error1").html("当前手机号已经被注册!");
+			return;
+		} else if(phoneCheckFlg == 4) {
+			$("#error1").html("当前手机号不允许注册!");
+			return;
+		}
+		var reg = new RegExp(/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/);
+		var password = $("#passwordresgister").val();
+	    if(!reg.test(password)){
+	    	$("#error1").html("请输入6至16位的数字字母组合密码！");
+	    	return;
+	    }
+		$.ajax({
+				type : "POST",
+				cache  :false,
+				url : "regist.do?method=toRegist",
+				data: "&type="+2,
+				dataType : "json",
+				success : function(data) {
+					$("#token").val(data.token);
+					$("#code").val(data.rUser.code);
+					$("#utype").val(data.rUser.utype);
+					$("#modulus").val(data.modulus);
+					$("#exponent").val(data.exponent);
+					registImediate();
+				}
+		});
+}
+// 手机号校验是否通过 0:通过校验 1:未输入 2:格式错误 3:已经注册
+var phoneCheckFlg = -1;
+// checkbox选择
+var checkFlg = true;
+// 邀请码验证标示
+var commendPhoneFlag = false;
+$("#check").click(function(){
+		if(!checkFlg) {
+			$("#check").removeClass("check_img").addClass("no_check_img");
+		} else {
+			$("#check").removeClass("no_check_img").addClass("check_img");
+		}
+		checkFlg = !checkFlg;
+		selectCheck();
+});
+function selectCheck() {if(!checkFlg) $("#error2").html("请阅读并选择！");}
+//倒计时
+var InterValObj1;//timer变量，控制时间
+var count1 = 60; //间隔函数，1秒执行
+var curCount1;   //当前剩余秒数
+//timer处理函数
+function setRemainTime() {
+	    if (curCount1 == 0) {
+	    	window.clearInterval(InterValObj1);//停止计时器
+	        $("#sendSmsBtn").removeClass().attr("class","jisuanqi").attr("onclick","sendSmsCode()").html("<i></i><span>获取验证码</span>");
+	    }else {
+	        curCount1--;
+	        $("#sendSmsBtn").html("<i></i><span class='jisuanqi' style='margin-left:0px;margin-top:0px;'>" + curCount1 + "</span>");
+		}
+}
+var InterValObj2; //timer变量，控制时间
+var count2 = 60;  //间隔函数，1秒执行
+var curCount2;    //当前剩余秒数
+function setRemainTime2() {
+	    if (curCount2 == 0) {                
+	    	window.clearInterval(InterValObj2);//停止计时器
+	        $("#sendVoiceBtn").removeClass().attr("class","voice_btn").attr("onclick","sendVoiceCode()").html("<i></i><span>语音获取</span>");
+	    }else {
+	        curCount2--;
+	        $("#sendVoiceBtn").html("<i></i><span class='jisuanqi' style='margin-left:0px;margin-top:0px;'>" + curCount2 + "</span>");
+		}
+}
+// 获取验证码
+function sendSmsCode(){
+		var verify_code=$("#verify_code").val();
+		// 校验手机号
+		if (phoneCheckFlg == -1){
+			loginBlur();
+		}
+		if(phoneCheckFlg == 1) {
+			$("#error2").html("手机号码未输入!");
+			return;
+		} else if(phoneCheckFlg == 2) {
+			$("#error2").html("手机号码格式错误!");
+			return;
+		} else if(phoneCheckFlg == 3) {
+			$("#error2").html("当前手机号已经被注册!");
+			return;
+		} else if(verify_code=="") {
+			$("#error2").html("请输入计算结果!");
+	        return;
+	    }else if(isNaN(verify_code)){
+	      	$("#error2").html("请输入计算结果!");
+	        return;
+	    }
+	    var $login    = $("#loginregister").val();
+	    var csrftoken = $("#csrftoken").val();
+		var randCode  = $("#randCode").val();
+		var code      = $("#code").val();
+		$.ajax({
+			type     : "POST",
+			cache    : false,
+			url      : "SendSmsServlet",
+			data     : "&tel="+$login+"&code="+code+"&csrftoken="+csrftoken+"&verify_code="+verify_code,
+			dataType : "json",
+			success  : function(data) {
+							if(data.flag){
+								$("#sendSmsBtn").attr("onclick","javascript:void(0);");
+								$("#sendSmsBtn").removeClass().attr("class","jisuanqi");
+								curCount1=count1;
+								InterValObj1 = window.setInterval(setRemainTime, 1000); //启动计时器，1秒执行一次
+								$("#phoneId").val(data.id);
+							}else{
+								curCount1 = 0;
+							}
+							if("短信已成功发送" != data.msg){
+								$("#error2").html(data.msg);			
+							}
+						}
+		});
+}
+$(function(){
+		 var $txt2_obj = $("#txt3");
+		 var $pswd_obj = $("#passwordresgister");
+		 $("#verify_code").blur(function(){
+		 	if($("#verify_code").val()=="" || $("#verify_code").val()=="请输入计算结果"){
+		 		$("#verify_code").css("color","#ccc").val("请输入计算结果");
+		 	}
+		 });
+		 $("#verify_code").focus(function(){
+		 	$("#verify_code").css("color","#000000");
+		 	if($("#verify_code").val()=="" || $("#verify_code").val()=="请输入计算结果"){
+		 		$("#verify_code").val("");
+		 	}
+		 	clearmsg();
+		 });
+		 $("#loginregister").focus(function(){
+		 	$("#loginregister").css("color","#000000").css("font-size","14px");
+		 	if($("#loginregister").val()=="" || $("#loginregister").val()=="请输入您的手机号"){
+		 		$("#loginregister").val("");
+		 		clearmsg();
+		 	}
+		 });
+		 $("#loginregister").blur(function(){
+			 loginBlur();
+		 });
+		 $("#randCode").focus(function(){
+		 	$("#randCode").css("color","#000000");
+		 	if($("#randCode").val()=="" || $("#randCode").val()=="请输入您的6位验证码"){
+		 		$("#randCode").val("");
+		 		clearmsg();
+		 	}
+		 });
+		 $("#randCode").blur(function(){
+		 	if($("#randCode").val()=="" || $("#randCode").val()=="请输入您的6位验证码"){
+		 		$("#randCode").css("color","#ccc").val("请输入您的6位验证码");
+		 	}
+		 });
+		 $txt2_obj.focus(function(){
+		 	$pswd_obj.css("color","#000000");
+		 	$pswd_obj.show().focus();
+		 	$txt2_obj.hide();
+		 	clearmsg();
+		 });
+		 $pswd_obj.blur(function(){
+		 	if($pswd_obj.val() == ""){
+		 		$pswd_obj.hide();
+		 		$txt2_obj.show();
+		 	}
+		 });
+		 $("#commendPhone").focus(function(){
+		 	$("#commendPhone").css("color","#000000");
+		 	if($("#commendPhone").val()=="" || $("#commendPhone").val()=="请输入推荐码(推荐人手机号后8位)"){
+		 		$("#commendPhone").val("");
+		 		clearmsg();
+		 	}
+		 });
+		 $("#commendPhone").blur(function(){
+		 	if($("#commendPhone").val()=="" || $("#commendPhone").val() == "请输入推荐码(推荐人手机号后8位)"){
+		 		$("#commendPhone").css("color","#ccc").val("请输入推荐码(推荐人手机号后8位)");
+		 	}
+		 	commendPhoneBlur();
+		 });
+});
+function before(obj){
+		var submitForm = submitRegistForm();
+		if(submitForm == false){
+			return false;
+		}
+		var verifyFlag = $("#verifyFlag").val();
+		if(verifyFlag != "1"){
+			return false;
+		}
+		var pwd       = $('#passwordresgister').val();
+	    var publicKey = RSAUtils.getKeyPair($("#exponent").val(), '', $("#modulus").val());
+	    $('#passwordresgister').val(RSAUtils.encryptedString(publicKey, pwd));
+		return true;
+}
+function loginBlur() {
+		var login = $("#loginregister").val();
+		var p = /(?!^\d+$)(?!^[a-zA-Z]+$)[0-9a-zA-Z]{4,23}/
+	 	if(login == "" || login == "请输入您的手机号"){
+	 		$("#loginregister").css("color","#ccc").css("font-size","11px").val("请输入您的手机号");
+	 		phoneCheckFlg = 1;
+	        return;
+	 	}
+	    var reg = new RegExp(/^0{0,1}(13[0-9]|15[0-9]|18[0-9]|14[0-9]|16[0-9]|17[0-9]|19[0-9])[0-9]{8}$/);
+	    if(!reg.test(login)) {
+	    	phoneCheckFlg = 2;
+	    	return;
+	    }
+	    var csrftoken = $("#csrftoken").val();
+	    $.ajax({
+			type    : 'post',
+			url     : 'regist.do?method=userNameRegist&userName='+login+'&csrftoken='+csrftoken,
+			async   : false,
+			dataType: 'json',
+			success : function(json){
+							if(json.registType == 1) {
+								$("#error1").html("当前手机号已被注册!");
+								phoneCheckFlg = 3;
+							}else if(json.registType == 2){
+								$("#error1").html("当前手机号不允许注册!");
+								phoneCheckFlg = 4;
+							} else {
+								$("#error1").html("");
+								phoneCheckFlg = 0;
+							}
+			}
+		});
+}
+
+function submitRegistForm() {
+		selectCheck();
+		var login   			=$("#loginregister").val();
+		var id      			=$("#phoneId").val();
+		var randCode			=$("#randCode").val();
+		var code    			=$("#code").val();
+		if(!checkFlg)          	return false;
+		if(phoneCheckFlg != 0) 	return false;
+		if(id == "") {
+			$("#error2").html("未进行手机验证码验证!");
+			return false;
+		} else {
+			$("#error2").html("");
+		}
+		var csrftoken = $("#csrftoken").val();
+		$.ajax({
+				type    : "POST",
+				cache   : false,
+				async   : false,
+				url     : "CheckSmsServlet",
+				data    : "&tel="+login+"&radomPwCode="+randCode+"&id="+id+"&code="+code+"&csrftoken="+csrftoken,
+				dataType: "json",
+				success : function(data) {
+								if(data.flag){
+									//$("#phoneId").val("");
+									$("#verifyFlag").val("1");
+									return true;
+								}else{
+									$("#error2").html(data.msg);
+									//$("#randCode").val("").focus();
+									$("#randCode").val("");
+									$("#verifyFlag").val("0");
+									return false;
+								}
+						 }
+		});
+		commendPhoneBlur();
+		if (!commendPhoneFlag) return false;
+}
+
+// 《鸿坤金服网站服务协议》链接
+$("#contract").click(function(){
+		$.XYTipsWindow({
+			___title:"鸿坤金服网站服务协议",
+			___content:"url:get?regist.do?method=toContract",
+			___width:"800",
+			___height:"600",
+			___dray:"___boxTitle",
+			___showbg:true
+		});
+});
+
+$("#toFxinvest").click(function(){
+			$.XYTipsWindow({
+				___title:"定向及合格投资者认定",
+				___content:"url:get?regist.do?method=toFxinvest",
+				___width:"800",
+				___height:"600",
+				___dray:"___boxTitle",
+				___showbg:true
+			});
+});
+
+$("#cont").click(function(){
+		$.XYTipsWindow({
+			___title:"投资协议",
+			___content:"url:get?regist.do?method=toCont",
+			___width:"800",
+			___height:"600",
+			___dray:"___boxTitle",
+			___showbg:true
+		});
+});
+var modes;
+function CharMode(iN){
+	    if( iN >= 48 && iN <= 57 ){//数字
+	        return 1;
+	    }else if( iN >= 65 && iN <= 90 ){//大写字母
+	        return 2;
+	    }else if( iN >= 97 && iN <= 122 ){//小写字母
+	        return 4;
+	    }else{
+	        return 8;//特殊字符
+	    }
+}
+function bitTotal(num){
+	    modes = 0;
+	    for( i = 0; i < 4; i++ ){
+	        if( num & 1){
+	            modes++;
+	        }
+	        num>>>=1;
+	    }
+	    return modes;
+}
+
+function checkStrong(sPW){
+	    if( sPW.length <= 4 ){
+	        return 0;  //密码太短
+	    }
+	    modes = 0;
+	    for( i = 0; i < sPW.length; i++ ){
+	        //测试每一个字符的类别并统计一共有多少种模式
+	        modes |= CharMode(sPW.charCodeAt(i));
+	    }
+	    return bitTotal(modes);
+}
+$("#passwordresgister").blur(function(){
+	    var pwd = $('#passwordresgister').val();
+	    if( pwd != '' ){
+	        $("#pwdLevel").val(checkStrong(pwd));
+	    }
+})
+function commendPhoneBlur() {
+		var commendPhone = $.trim($("#commendPhone").val());
+		$("#commendPhone").val(commendPhone);
+		if ("" != commendPhone && "请输入推荐码(推荐人手机号后8位)" != commendPhone) {
+			var regPh = new RegExp(/^[0-9a-zA-Z]{8}$/);
+			var regPh1 = new RegExp(/^[0-9a-zA-Z]{12}$/);
+		    if((commendPhone.length != 8 && commendPhone.length != 12 )|| (!regPh.test(commendPhone) &&!regPh1.test(commendPhone) )) {
+		    	commendPhoneFlag = false;
+		    	$("#error2").html("邀请码必须为8位字母或数字");
+		    } else {
+		    	$("#error2").html("");
+		    	commendPhoneFlag = true;
+		    }
+		} else {
+			commendPhoneFlag = true;
+		}
+}
+if(window!=top){
+		top.location.href=location.href;
+}
+function refreshs(obj) {
+		obj.src = "regist/ImageCheckCodeServlet?" + Math.random();
+}
+</script>
+				</form>
+	    <div class="clear"></div>
+	</div>
+</div>
+</div>
+<!--2016-4-27新添翻转效果-->
+<script type="text/javascript">
+    $(function(){
+       $("#loginIn").click(function(){
+    	   $(".box-front").css({"transform":"rotateY(180deg)","-webkit-transform":"rotateY(180deg)"})
+    	   .siblings(".box-back").css({"transform":"rotateY(0deg)","-webkit-transform":"rotateY(0deg)"})
+    	   .siblings(".box-regist").css({"transform":"rotateY(90deg)","-webkit-transform":"rotateY(90deg)"});
+       })
+	})
+	function toLogin(){
+    	$(".box-front").css({"transform":"rotateY(180deg)","-webkit-transform":"rotateY(180deg)"})
+ 	   .siblings(".box-back").css({"transform":"rotateY(0deg)","-webkit-transform":"rotateY(0deg)"})
+ 	   .siblings(".box-regist").css({"transform":"rotateY(90deg)","-webkit-transform":"rotateY(90deg)"});
+    }
+	function backToRegist(){
+    	$(".box-back").css({"transform":"rotateY(180deg)","-webkit-transform":"rotateY(180deg)"})
+    	.siblings(".box-front").css({"transform":"rotateY(0deg)","-webkit-transform":"rotateY(0deg)"})
+    	.siblings(".box-regist").css({"transform":"rotateY(90deg)","-webkit-transform":"rotateY(90deg)"});
+    }
+	
+	function registImediate(){
+		$(".box-regist").css({"transform":"rotateY(0deg)","-webkit-transform":"rotateY(0deg)"})
+    	.siblings(".box-back").css({"transform":"rotateY(90deg)","-webkit-transform":"rotateY(90deg)"})
+    	.siblings(".box-front").css({"transform":"rotateY(180deg)","-webkit-transform":"rotateY(180deg)"});
+	}
+	
+	function skipage(origin,target){
+       $("#" + origin).css({"transform":"rotateY(180deg)","-webkit-transform":"rotateY(180deg)"}).hide();
+       $("#" + target).show().css({"transform":"rotateY(0deg)","-webkit-transform":"rotateY(0deg)"});
+	}
+</script>
+
+<!--2016-4-27新添翻转效果结束-->
+
+<!--2016-5-5公告横向滚动-->
+<style>
+.pad_right{ padding-right:2em;}
+#scroll_div {height:54px;line-height:54px;overflow: hidden;white-space: nowrap;width:835px;float:left;margin-left:10px;}
+#scroll_begin,#scroll_end {display: inline;}
+#scroll_begin a{color:#666;}
+#scroll_begin a:hover{color:#f39200;}
+</style>
+<script type="text/javascript">
+function ScrollImgLeft(){ 
+	var speed=30;
+	var MyMar = null;
+	var scroll_begin = document.getElementById("scroll_begin"); 
+	var scroll_end = document.getElementById("scroll_end"); 
+	var scroll_div = document.getElementById("scroll_div"); 
+	if(scroll_begin==null&&scroll_end==null&&scroll_div==null){
+		return;
+	}
+	scroll_end.innerHTML=scroll_begin.innerHTML;
+	function Marquee(){ 
+	    if(scroll_end.offsetWidth-scroll_div.scrollLeft<=0){
+		   scroll_div.scrollLeft-=scroll_begin.offsetWidth;
+	    }else{
+		   scroll_div.scrollLeft++;
+		}
+	} 
+	MyMar=setInterval(Marquee,speed);
+	scroll_div.onmouseover = function(){
+		clearInterval(MyMar);
+	}
+	scroll_div.onmouseout = function(){
+		MyMar = setInterval(Marquee,speed);　　　　
+	}  
+}
+$(document).ready(function(){
+	ScrollImgLeft();
+	toLogin();
+});
+</script>
+<!--鸿坤金服是一家什么样的平台最新版？ -->
+
+
+
+
+
+
+<!-- 最新消息 结束 -->
+<!-- 鸿坤金服是家什么的平台开始 -->
+<!--<div style="background:white;border-bottom:1px solid #e5e5e5;">
+	<ul style="width:1050px;margin:0 auto;padding-top:38px;" class="clearfix">
+		<li class="infoList fl">
+			<a href="/hyhdController.do?method=toRecommend">
+				<p class="fl"><img src="/css/yrtz/images/indexImg170307/yqyl.png"></p>
+				<div class="fl listCont">
+					<h3>邀请有礼</h3>
+					<p class="listMass">他投资你赚钱，奖励为好友<br/>首投金额折标后的0.2%</p>
+				</div>
+			</a>
+		</li>-->
+		<!-- 
+		<li class="infoList fl">
+			<a href="http://www.qianshenghuo.com/">
+				<p class="fl"><img src="/css/yrtz/images/indexImg170307/wzqsh.png" style="padding-top:3px;"></p>
+				<div class="fl listCont">
+					<h3>玩转前生活</h3>
+					<p class="listMass">活期、团购、积分<br/>更多社区服务</p>
+				</div>
+			</a>
+		</li>
+		-->
+		<!--<li class="infoList fl">
+			<a href="/loginController.do?method=xszq">
+				<p class="fl"><img src="/css/yrtz/images/indexImg170307/wzqkd.png"  style="padding-top:3px;"></p>
+				<div class="fl listCont">
+					<h3>玩转鸿坤金服</h3>
+					<p class="listMass">财富增值从这里开始<br/>聪明人的选择</p>
+				</div>
+			</a>
+		</li>
+		<li class="infoList fl">
+			<a href="/hyhdController.do?method=toDownApp">
+				<p class="fl"><img src="/css/yrtz/images/indexImg170307/upDateApp.png" style="padding-top:6px;"></p>
+				<div class="fl listCont">
+					<h3>下载手机app</h3>
+					<p class="listMass">抢标投资快人一步<br/>更有积分支付一站式服务</p>
+				</div>
+			</a>
+		</li>
+		<li class="infoList fl">
+			<a href="#">
+				<p class="fl" style="padding-left: 20px;"><img src="/css/yrtz/images/indexImg170307/img_qkdwx.png"></p>
+				<div class="fl listCont">
+					<h3>关注鸿坤金服微信</h3>
+					<p class="listMass">扫描二维码<br/>即可关注鸿坤金服官方微信</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>-->
+<script type="text/javascript">
+    banner();
+	//刷新验证码
+	function refresh(obj) {
+		obj.src = "login/imageServlet?" + Math.random();
+	}
+	$(function(){
+		$("#info").text("");
+		 var $txt2_obj = $("#txt2");
+		 var $pswd_obj = $("#password");
+		 $("#login").focus(function(){
+		 	$("#login").css("color","#000000");
+		 	$("#info").html("");
+		 	if($("#login").val()=="" || $("#login").val()=="请输入您的手机号"){
+		 		$("#login").val("");
+		 	}
+		 })
+		 $("#login").blur(function(){
+		 	if($("#login").val()==""){
+		 		$("#login").css("color","#ccc").val("请输入您的手机号");
+		 	}
+		 })
+		 $txt2_obj.focus(function(){
+		 	$("#info").html("");
+		 	$("#password").css("color","#000000");
+		 	$pswd_obj.show().focus();
+		 	$txt2_obj.hide();
+		 })
+		 $pswd_obj.blur(function(){
+		 	if($pswd_obj.val() == ""){
+		 		$pswd_obj.hide();
+		 		$txt2_obj.show();
+		 	}
+		 });
+	 });
+	function submitForm(){
+		// 密码加密
+		var pwd = $('#password').val();
+	    var publicKey = RSAUtils.getKeyPair('010001', '', '0086938403502a7026ef9869d841028fc336206b417fe569f415e961bbce30d6dafcddcfe5f637d15eaa225dfd013a44fe8762828ba9ca3c06ffee296278d49a09ec0632e14270fd9ec7fece8178012572302472e91f74e192791f08d49db6ef9707bd9e936ad3b58afe890ad681f1169747f983c5b39e290517f6460fa46ddf61');
+	    $('#password').val(RSAUtils.encryptedString(publicKey, pwd));
+		$.ajax({
+				type: "POST",
+				url:"login.do?method=indexlogin",
+				data:$("#loginform").serialize(),
+				dataType:"json",
+				cache: false,
+				success: function(data){
+					if(data.state !=1){
+						$('#password').val("");
+	    				$("#info").css("color","red").html(data.errMsg);
+	    			}else{
+	    				window.location.href="index.do?method=getIndexPage";
+	    			}
+	   			}
+			});
+		//$("#loginform").submit();
+	}
+	//回车提交
+	document.onkeydown=function(event){
+		e = event ? event :(window.event ? window.event : null); 
+		if(e.keyCode==13){ 
+			$("#password").blur();
+			
+		    //执行的方法  
+		    submitForm();
+		} 
+	}
+	if(window!=top){
+		top.location.href=location.href;
+	}
+	if (getCookie("login") != null) {
+	//	document.getElementsByName('rememberMe')[0].checked = true;
+		//document.getElementById("login").value = getCookie("login");
+		//document.getElementById("password").focus();
+	} else {
+		//document.getElementById("login").focus();
+	}
+	function getCookie(name) {
+		var prefix = name + "=" 
+		var start = document.cookie.indexOf(prefix);
+	
+		if (start==-1) {
+			return null;
+		}
+		
+		var end = document.cookie.indexOf(";", start+prefix.length);
+		if (end==-1) {
+			end=document.cookie.length;
+		}
+	
+		var value=document.cookie.substring(start+prefix.length, end);
+		return unescape(value);
+	}
+	function onSupport(){
+		var reward = document.getElementById("rewards");
+		var login = $("#login").val();
+		if(reward.checked==true){
+			$("#login").val(login);
+		}else{
+			$("#login").val("");
+		}
+	}
+	//检查密码强度
+	var modes;
+	//CharMode函数，测试某个字符是属于哪一类
+	function CharMode(iN){
+	    if( iN >= 48 && iN <= 57 ){//数字
+	        return 1;
+	    }else if( iN >= 65 && iN <= 90 ){//大写字母
+	        return 2;
+	    }else if( iN >= 97 && iN <= 122 ){//小写字母
+	        return 4;
+	    }else{
+	        return 8;//特殊字符
+	    }
+	}
+	//bitTotal函数，计算出当前密码当中一共有多少种模式
+	function bitTotal(num){
+	    modes = 0;
+	    for( i = 0; i < 4; i++ ){
+	        if( num & 1){
+	            modes++;
+	        }
+	        num>>>=1;
+	    }
+	    return modes;
+	}
+	//checkStrong函数，返回密码的强度级别
+	function checkStrong(sPW){
+	    if( sPW.length <= 4 ){
+	        return 0;  //密码太短
+	    }
+	    modes = 0;
+	    for( i = 0; i < sPW.length; i++ ){
+	        //测试每一个字符的类别并统计一共有多少种模式
+	        modes |= CharMode(sPW.charCodeAt(i));
+	    }
+	    return bitTotal(modes);
+	}
+	//检测密码强度
+	$("#password").blur(function(){
+	    var pwd = $('#password').val();
+	    if( pwd != '' ){
+	        $("#pwdLevel").val(checkStrong(pwd));
+	    }
+	})
+</script>
+
+<style>
+	.xsb_tzbt2:hover{
+		background:#ccc;
+		width:156px;
+	}
+</style>
+
+
+<div class="qlife-container clearfix">
+	<div class="qdz_left advice_bg fl" style="position:relative;">
+	     <div class="qdz_left_cont">
+		     	     </div>
+	</div>
+	<div class="advice_biao">
+		<!-- 鸿金宝按月付息结束-->
+		<!-- 体验标开始-->
+    </div>
+</div>
+
+<script>
+	function qixifun(){
+	    var startDate=new Date('2017/09/14 09:00').getTime()
+        var endDate=new Date('2017/09/22 00:00').getTime()
+        var nowDate=new Date().getTime()
+        if(nowDate>=startDate && nowDate<=endDate){
+            document.getElementById('qixitpid').style.display='block'
+          
+        }
+	}
+	qixifun()  //判断七夕图片显示函数
+
+
+ $(function(){
+	 // 定期投资左侧背景图高度
+     setTimeout(function(){
+    	 $adviceHeight = $(".advice_biao").height();
+    		$(".advice_bg").height($adviceHeight) ;
+     },100)
+	 
+     //新手标 鼠标滑过标按钮，所做效果
+	 $(".tl_xsb").mouseover(function(){
+		$(this).find(".xsb_tzbt1").addClass("xsb_tzbt_1");
+		$(this).addClass("border_shadow");
+	})
+	$(".tl_xsb").mouseout(function(){
+		$(this).find(".xsb_tzbt1").removeClass("xsb_tzbt_1");
+		$(this).removeClass("border_shadow");
+	}) 
+	//推荐标、爆款标、体验标鼠标滑过标按钮，所做效果
+	$(".qdz_right").mouseover(function(){
+		$(this).find(".xsb_tzbt1").addClass("xsb_tzbt_1");
+		$(this).addClass("border_shadow");
+	})
+	$(".qdz_right").mouseout(function(){
+		$(this).find(".xsb_tzbt1").removeClass("xsb_tzbt_1");
+		$(this).removeClass("border_shadow");
+	})
+	$(".qdz_right").mouseover(function(){
+		$(this).find(".xsb_tzb2").addClass("xsb_tzbt_1");
+		$(this).addClass("border_shadow");
+	})
+	$(".qdz_right").mouseout(function(){
+		$(this).find(".xsb_tzbt2").removeClass("xsb_tzbt_1");
+		$(this).removeClass("border_shadow");
+	})
+	// 按月付息鼠标滑过标按钮，所做效果
+	$(".dq_border").mouseover(function(){
+		$(this).find(".ljtz_btn a").addClass("ljtz_btn_a");
+		$(this).addClass("border_shadow");
+	})
+	$(".dq_border").mouseout(function(){
+		$(this).find(".ljtz_btn a").removeClass("ljtz_btn_a");
+		$(this).removeClass("border_shadow");
+	})		
+	     
+ })
+
+	var login = '';
+	var url2 = "location='/login.do?method=tologin'";
+
+	$(function(){
+		var timeObj = $("div.time");
+		//alert(timeObj.length);
+		console.log("timeObjlength.........."+timeObj.length);
+		for (var i = 0; i < timeObj.length; i++) {
+			var id = timeObj.eq(i).attr("id");
+			var code = timeObj.eq(i).attr("code");
+			var second = timeObj.eq(i).attr("second");
+			var state = timeObj.eq(i).attr("state");
+			var investPosition = timeObj.eq(i).attr("investPosition");
+			var appShowText = timeObj.eq(i).attr("appShowText");
+			var url1 = "location='/investControllerFront.do?method=detail&code="+code+"&tempType=1'";
+			var intervalObj;
+			if(investPosition=="2"){
+				appShowText = appShowText==''?'手机专享':appShowText;
+				$("#"+id).html('<a class="xsb_tzbt fr bak_gray" style="margin:0 auto;">'+appShowText+'</a>');
+			}else{
+				if (state == 1) {
+					alarm = new Alarm(id, second, url1, url2, function () {}, function(){});
+					alarm.start();
+				} else if (state ==2||state ==3||state ==4||state ==5){
+					if(id.indexOf("yx") > -1){
+						$("#"+id).html('<button type="button" class="lj_button bak_gray"   style="background:#ccc;width:100%;border-radius:0;height:53px;">已售罄</button>');
+					}else{
+						$("#"+id).html('<a style="background-color:#ccc;border:none;color:#fff;" class="xsb_tzbt fr xsb_tzbt2">已售罄</a>');
+					}
+				} else if(state==9){
+					
+					if(id.indexOf("yx") > -1){
+						$("#"+id).html('<button type="button" class="lj_button bak_gray"   style="background:#ccc;width:100%;border-radius:0;height:53px;">已售罄</button>');
+					}else{
+						$("#"+id).html('<a style="background-color:#ccc;border:none;color:#fff;" class="xsb_tzbt fr xsb_tzbt2">已售罄</a>');
+					}
+					
+				} else if(state==8){
+					
+					if(id.indexOf("yx") > -1){
+						$("#"+id).html('<button type="button" class="lj_button bak_gray"   style="background:#ccc;width:100%;border-radius:0;height:53px;">已售罄</button>');
+					}else{
+						$("#"+id).html('<a style="background-color:#ccc;border:none;color:#fff;" class="xsb_tzbt fr xsb_tzbt2">已售罄</a>');
+					}
+					
+				}
+			} 
+		}
+	});
+	var Alarm = function (id, second, url1, url2, countFunc, endFunc) {
+		this.id = id;
+		this.second = second; //时间
+		this.url1 = url1;
+		this.url2 = url2;
+		this.countFunc = countFunc; //计时函数
+		this.endFunc = endFunc; //结束函数
+		this.flag = 't' + Date.parse(new Date()); //
+	};
+	Alarm.prototype.start = function () {
+	    var self = this;
+
+	    self.flag = setInterval(function () {
+	        if (self.second <= 0) {
+	        	if(self.id.indexOf("yx") > -1){
+	        		//$("#"+self.id).html('<button type="button" class="lj_button" onclick="'+(login.length>0?self.url1:self.url2)+'">立即投资</button>');
+	        		$("#"+self.id).html('<div class="ljtz_btn"><a href="javascript:'+(login.length>0?self.url1:self.url2)+'"" class="">立即投资</a></div>');
+	        		 
+	        	} else {
+					$("#"+self.id).html('<a href="javascript:'+(login.length>0?self.url1:self.url2)+'" class="xsb_tzbt xsb_tzbt1" id="biddInfo">立即投资</a>');
+	        	}
+	            clearInterval(self.flag);
+	            self.endFunc();
+	            //console.log('计时结束');
+	        } else {
+				
+	        	var hh = parseInt(self.second / 60 / 60, 10);//计算剩余的小时
+				var mm = parseInt(self.second / 60 % 60, 10);//计算剩余的分钟数
+				var ss = parseInt(self.second % 60, 10);//计算剩余的秒数
+				hh = checkTime(hh);
+				mm = checkTime(mm);
+				ss = checkTime(ss);
+				//self.countFunc(id, hh, mm, ss);
+				if(self.id.indexOf("yx") > -1){
+	        		//$("#"+self.id).html('<button type="button" class="lj_button bak_gray" style="background:#ed5345;">即将开始 '+ hh + ":" + mm + ":" + ss+'</button>');
+	        		$("#"+self.id).html('<button type="button" class="ljtz_btn" style="font-size:16px;background:#f39200;border-top:1px solid #ddd;color:#fff;">即将开始 '+ hh + ":" + mm + ":" + ss+' </button>');
+				} else {
+					$("#"+self.id).html("<div class='xsb_tzbt  fr'>即将开始  " + hh + ":" + mm + ":" + ss + "</div>");
+	        	}
+				self.second--;
+	        }
+	    }, 1000);
+	}
+
+	function checkTime(i){  
+	   if (i < 10) {  
+	       i = "0" + i;  
+	   }  
+	   return i;  	
+	}
+
+	function invest(url){
+		window.location.href = url;
+	}
+
+	
+
+	
+	
+</script>
+<link href="/css/guquan/newadd.css" rel="stylesheet"/>
+<link href="/css/guquan/second.css?v=20181013" rel="stylesheet"/>
+<body class="pr" style="background:#f5f5f5;">
+<div class="qlife-container clearfix"  style="margin-top:-30px;padding-top:0;"  id="privateAnchor">
+    <div class="gqtz_left fl">
+        <div class="gqtz_left_cont">
+            <h3 class="gqtz_name">私募基金</h3>
+        </div>
+    </div>
+    <div class="gqtz_show fr">
+        <div class="clearfix">
+            <div id="con_bt_1">
+          <div class="fr hw_border" style="height:305px">
+              <div class="newlistcss" style="margin-right:43px;margin-top: 12px;padding-top:30px;">
+	              <ul>
+		                 <li><a href="infoNewsFrontController.do?method=getInfoNews&id=785">
+		                 	<div>私募基金知识——完全棘轮条款</div>
+		                 	<span>2018-10-16</span></a>
+		                 </li>
+		                 <li><a href="infoNewsFrontController.do?method=getInfoNews&id=784">
+		                 	<div>私募基金知识——“2-20”收费模式</div>
+		                 	<span>2018-10-16</span></a>
+		                 </li>
+		                 <li><a href="infoNewsFrontController.do?method=getInfoNews&id=783">
+		                 	<div>私募基金知识——J曲线效应</div>
+		                 	<span>2018-10-16</span></a>
+		                 </li>
+		                 <li><a href="infoNewsFrontController.do?method=getInfoNews&id=782">
+		                 	<div>私募基金知识——承诺出资制</div>
+		                 	<span>2018-10-16</span></a>
+		                 </li>
+		                 <li><a href="infoNewsFrontController.do?method=getInfoNews&id=781">
+		                 	<div>私募基金知识——管理层回购</div>
+		                 	<span>2018-10-16</span></a>
+		                 </li>
+		                 <li><a href="infoNewsFrontController.do?method=getInfoNews&id=780">
+		                 	<div>私募基金的风险提示词条</div>
+		                 	<span>2018-10-16</span></a>
+		                 </li>
+	              </ul>
+			  </div>							 
+          </div>                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 海外基金 -->
+ 	<div class="qlife-container clearfix" id="overseaAnchor">
+           <div class="hw_left fl">
+               <div class="hw_left_cont">
+                  <h3 class="hw_name">海外基金</h3>
+               </div>
+           </div>
+           <div class="fr hw_border">
+              <div class="newlistcss" style="margin-right:43px;margin-top: 12px;padding-top:30px;">
+	              <ul>
+	              		 <li><a href="infoNewsFrontController.do?method=getInfoNews&id=795">
+		                 	<div>投资只关注收益率远远不够，善用两个基准实现财富人生 </div>
+		                 	<span>2018-10-13</span></a>
+		                 </li>
+	              		 <li><a href="infoNewsFrontController.do?method=getInfoNews&id=794">
+		                 	<div>中国海外基金的风险主要有哪些?</div>
+		                 	<span>2018-10-13</span></a>
+		                 </li>
+	              </ul>
+			  </div>		 
+          </div> 
+    </div>
+ 	<div class="qlife-container clearfix" id="overseaAnchor">
+           <div class="hw_left fl" id="trustAnchor" style="background: url(/css/yrtz/images/gqIndex/img_xintuo.png) no-repeat;">
+               <div class="hw_left_cont">
+                  <h3 class="hw_name">信托产品</h3>
+               </div>
+           </div>
+           <div class="fr hw_border">
+              <div class="newlistcss" style="margin-right:43px;margin-top: 12px;padding-top:30px;">
+	              <ul>
+		                 <li><a href="infoNewsFrontController.do?method=getInfoNews&id=776">
+		                 	<div>怎样购买信托产品？</div>
+		                 	<span>2018-10-12</span></a>
+		                 </li>	              	
+		                 <li><a href="infoNewsFrontController.do?method=getInfoNews&id=775">
+		                 	<div>信托知识入门--三种最常见的Trust</div>
+		                 	<span>2018-10-12</span></a>
+		                 </li>	              	
+	              </ul>
+			  </div>		 
+          </div>
+    </div>
+ 	<div class="qlife-container clearfix" id="houseAnchor">
+           <div class="hw_left fl" style="background: url(/images/guquan/house_invest.png) no-repeat;">
+               <div class="hw_left_cont">
+                  <h3 class="hw_name">房产投资</h3>
+               </div>
+           </div>  
+          <div class="fr hw_border">
+              <div class="newlistcss" style="margin-right:43px;margin-top: 12px;padding-top:30px;">
+	              <ul>
+		                 <li><a href="infoNewsFrontController.do?method=getInfoNews&id=766">
+		                 	<div>房屋买卖合同需要公证吗，需要提交哪些材料？</div>
+		                 	<span>2018-10-12</span></a>
+		                 </li>
+		                 <li><a href="infoNewsFrontController.do?method=getInfoNews&id=765">
+		                 	<div>房产交易：物业交割应该关注哪些问题？</div>
+		                 	<span>2018-10-12</span></a>
+		                 </li>
+	              </ul>
+			  </div>							 
+          </div>               
+    </div>
+<div style="height:100px;"></div>    
+</body>
+<script>
+	$(function(){
+		$(".hw_border").mouseover(function(){
+		$(this).find(".xsb_tzbt").addClass("xsb_tzbt_1");
+	})
+	$(".hw_border").mouseout(function(){
+		$(this).find(".xsb_tzbt").removeClass("xsb_tzbt_1");
+	})
+	})
+</script>
+<!-- footer 开始 -->
+<div class="footer">
+		<div style="width:100%;background:#888;margin-top:18px;">
+		<div class="footer_bot">
+			<p class="link_c">
+				友情链接：
+					<a href="http://iof.hexun.com/" target="_blank">和讯网</a>
+					<a href="http://fund.jrj.com.cn/" target="_blank">金融界</a>
+					<a href="http://www.p5w.net/money/" target="_blank">全景理财</a>
+					<a href="http://www.stockstar.com" target="_blank">证券之星</a>
+					<a href="http://www.cctvjj.com" target="_blank">CCTV证券资讯节目部</a>
+					<a href="http://if.pedaily.cn/" target="_blank">投资界</a>
+					<a href="http://www.nmgjrw.com" target="_blank">内蒙古金融网</a>
+					<a href="http://www.wdzj.com/" target="_blank">网贷之家</a>
+					<a href="http://www.wd315.cn" target="_blank">网贷315</a>
+					<a href="http://www.tou163.com" target="_blank">网贷导航</a>
+			</p>
+			<!--  
+		    <ul class="lj_fr">
+		       <li>友情链接： <a href="">和讯网</a></li>
+		       <li><a href="">金融界</a></li>
+		       <li><a href="">全景理财</a></li>
+		       <li><a href="">证券之星</a></li>
+		       <li><a href="">CCTV证券资讯节目部</a></li>
+		       <li><a href="">投资界</a></li>
+		       <li><a href="">内蒙古金融网</a></li>
+		       <li><a href="">网贷315</a></li>
+		    </ul>-->
+		    <ul class="company_name" style="width:842px;">
+		      <!-- <span>@2015鸿坤理想（深圳）科技发展有限公司</span> -->
+		      <ul class="footer_rt fl" style="width:700px;">
+		      <li style="line-height: 30px;margin-left: 120px;">
+					<a id='___szfw_logo___' href='http://www.miitbeian.gov.cn/' target='_blank' style="color:#ddd;">
+						粤ICP备17063530号-1
+				   </a>
+				</li>
+			  <li>
+			    <a id='___szfw_logo___' href=' http://www.itrust.org.cn/home/index/itrust_certifi/wm/PJ2017061401' target='_blank'>
+			      <img src="css/yrtz/images/index/wxrz.png" width="82">
+			    </a>   
+		      </li>
+		      
+		    
+			  <li>
+			    <a id='___szfw_logo___' href='http://www.itrust.org.cn/home/index/satification_certificate/wm/MY2017061402' target='_blank'>
+			      <img src="css/yrtz/images/index/myd.jpg" width="82"></li>
+			    </a>
+			  <li>
+			    <a id="___szfw_logo___" href="https://credit.szfw.org/CX20170704038751121635.html" target="_blank">
+			      <img src="css/yrtz/images/index/zx_img.jpg" width="82">
+			    </a>   
+		      </li>
+			  <li>
+			    <a id="___szfw_logo___" href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.hongkunjinfu.com&at=business" target="_blank">
+			      <img src="css/yrtz/images/index/zx_img2.jpg" >
+				</a>
+			  </li>
+			    <div class="clear"></div>
+		       </ul>
+		    </ul>
+		</div>
+	</div>
+		<div class="clear"></div>
+
+
+</div>
+
+<!--二维码弹出层start-->
+<!-- <div id="dialog" class="dialog-overlay"></div>
+<div id="ewm" class="ewm_layer">
+	<a href="#" class="close"></a>
+	<div class="ewm_weixin">
+	    <h3>鸿坤金服官微</h3>
+	    <h4>更多服务请关注官方服务号</h4>
+	    <div class="ewm"><img src="/css/yrtz/images/index/ewm_fwh.jpg"></div>
+	 </div> 
+</div> -->
+<!--二维码弹出层end-->
+
+
+
+<script type='text/javascript'>
+  (function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();
+  
+ </script>
+
+		<!--左侧悬浮内容 开始 
+		<div class="left_fc">				
+			<div class="re" id="fc_hide">
+				<div class="fc_img"><img src="/css/yrtz/images/index/app_xf_1.jpg" widht="200" height="240"></div>
+				<div class="fc_close"></div>
+			</div>
+		</div>-->
+		<!-- 左侧悬浮内容 结束 -->
+		
+		<!-- 最下面的广告图片固定 开始 -->
+<!-- div class="fixed_add" id="s11_gg">
+	<div class="pr">
+		<a href="indexController.do?method=marketingInfo" class="link"></a>
+		<div class="warp">
+			<div class="pr" style="z-index:1100;">
+				<div class="gg_close"><img src="/css/yrtz/images/index/gg_close.jpg"></div>
+			</div>
+		</div>
+	
+	
+</div-->
+<!-- 最下面的广告图片固定 结束 -->
+<!-- 好友推荐弹窗 开始 -->
+
+
+ <!--  <div id="qsh_tg">
+	<div class="hytj_bg"></div>
+	<div class="hytj_cont">
+		<div class="hytj_cbg app_tc pr">
+			<a href="http://www.qianshenghuo.com" target="_blank">
+			</a>
+			<div class="jx_close">
+				<p><img src="/css/yrtz/images/index/jx_close.png"></p>
+			</div>
+		</div>
+	</div>
+</div>-->
+
+<script type="text/javascript">
+/*
+  $(document).ready(function () {
+        $(".hytj_cbg p").click(function(){
+			$(".hytj_bg").hide();
+			$(".hytj_cbg").hide();
+        });
+    });
+*/
+    //当前时间大于26号时显示该遮罩层
+    /*
+    var now = new Date();
+    var time = new Date("2017-02-26 00:00:00");
+    if(now >= time){
+	    setTimeout(function(){
+	    	$('#qsh_tg').hide();
+	    }, 5000);
+    }else{
+    	$('#qsh_tg').hide();
+    }*/
+    //setTimeout("document.getElementById('qsh_tg').style.display = 'none';", 5000);
+    
+
+</script>
+	</body>
+</html>
