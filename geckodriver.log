@@ -11351,3 +11351,12 @@ JavaScript error: https://www.hongkunjinfu.com/, line 207: ReferenceError: click
 JavaScript error: https://www.hongkunjinfu.com/index.do?method=getIndexPage, line 207: ReferenceError: clickclose is not defined
 1544964287352	addons.productaddons	WARN	File download failed: 0x80004004
 1544964287426	addons.productaddons	WARN	File download failed: 0x80040111
+1544969632552	geckodriver	INFO	Listening on 127.0.0.1:59774
+1544969634651	mozprofile::profile	INFO	Using profile path C:\Users\mhf\AppData\Local\Temp\rust_mozprofile.S0rcvtK5h5a2
+1544969634671	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox45\firefox.exe with args []
+1544969634690	geckodriver::marionette	INFO	Connecting to Marionette on localhost:59780
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+JavaScript error: https://www.hongkunjinfu.com/, line 207: ReferenceError: clickclose is not defined
+1544969638014 Marionette: Element is missing an accesible name -> id: login, tagName: INPUT, className: login_input
+1544969638151 Marionette: Element does not have a correct accessibility role and may not be manipulated via the accessibility API -> id: password, tagName: INPUT, className: login_input
+1544969638188 Marionette: Element does not have a correct accessibility role and may not be manipulated via the accessibility API -> id: , tagName: DIV, className: login_button login_gradient
