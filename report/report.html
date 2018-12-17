@@ -194,9 +194,9 @@ function showOutput(id, name) {
 
 <div class='page-header'>
 <h1>hkjf测试报告</h1>
-<p class='attribute'><strong>开始时间:</strong> 2018-12-16 22:13:52</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:07.673490</p>
-<p class='attribute'><strong>状态:</strong> 错误 1</p>
+<p class='attribute'><strong>开始时间:</strong> 2018-12-17 19:26:49</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:08.226007</p>
+<p class='attribute'><strong>状态:</strong> 通过 1</p>
 
 </div>
 <p class='description'>修改html报告</p>
@@ -227,43 +227,31 @@ function showOutput(id, name) {
     <td>查看</td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>testjf1.case.test_pc_loginok2.Test_Pclogin2</td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
+    <td>0</td>
     <td><a href="javascript:showClassDetail('c1',1)">详情</a></td>
 </tr>
 
-<tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_pcLogin2</div></td>
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_pcLogin2</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
-        错误</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        通过</a>
 
-    <div id='div_ft1.1' class="popup_window">
+    <div id='div_pt1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.1: Traceback (most recent call last):
-  File "D:\t金服_测试\testjf1\case\test_pc_loginok2.py", line 33, in test_pcLogin2
-    t=driver.find_element_by_xpath("html/body/div[3]/div[2]/div/div[1]/div/div[2]/div/p").text
-  File "C:\Users\mhf\AppData\Roaming\Python\Python36\site-packages\selenium\webdriver\remote\webdriver.py", line 295, in find_element_by_xpath
-    return self.find_element(by=By.XPATH, value=xpath)
-  File "C:\Users\mhf\AppData\Roaming\Python\Python36\site-packages\selenium\webdriver\remote\webdriver.py", line 754, in find_element
-    'value': value})['value']
-  File "C:\Users\mhf\AppData\Roaming\Python\Python36\site-packages\selenium\webdriver\remote\webdriver.py", line 238, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\mhf\AppData\Roaming\Python\Python36\site-packages\selenium\webdriver\remote\errorhandler.py", line 193, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: html/body/div[3]/div[2]/div/div[1]/div/div[2]/div/p
-
+pt1.1: 总资产
 
 
         </pre>
@@ -276,9 +264,9 @@ selenium.common.exceptions.NoSuchElementException: Message: Unable to locate ele
 <tr id='total_row'>
     <td>总计</td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
+    <td>0</td>
     <td>&nbsp;</td>
 </tr>
 </table>

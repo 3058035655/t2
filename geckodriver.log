@@ -11360,3 +11360,22 @@ JavaScript error: https://www.hongkunjinfu.com/, line 207: ReferenceError: click
 1544969638014 Marionette: Element is missing an accesible name -> id: login, tagName: INPUT, className: login_input
 1544969638151 Marionette: Element does not have a correct accessibility role and may not be manipulated via the accessibility API -> id: password, tagName: INPUT, className: login_input
 1544969638188 Marionette: Element does not have a correct accessibility role and may not be manipulated via the accessibility API -> id: , tagName: DIV, className: login_button login_gradient
+1545045986020	geckodriver	INFO	Listening on 127.0.0.1:54572
+1545045988008	mozprofile::profile	INFO	Using profile path C:\Users\mhf\AppData\Local\Temp\rust_mozprofile.b52Ib6wp6OoJ
+1545045988026	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox45\firefox.exe with args []
+1545045988339	geckodriver::marionette	INFO	Connecting to Marionette on localhost:54582
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+JavaScript error: https://www.hongkunjinfu.com/, line 207: ReferenceError: clickclose is not defined
+1545045992423 Marionette: Element is missing an accesible name -> id: login, tagName: INPUT, className: login_input
+1545045992545 Marionette: Element does not have a correct accessibility role and may not be manipulated via the accessibility API -> id: password, tagName: INPUT, className: login_input
+1545045992577 Marionette: Element does not have a correct accessibility role and may not be manipulated via the accessibility API -> id: , tagName: DIV, className: login_button login_gradient
+1545046009641	geckodriver	INFO	Listening on 127.0.0.1:54632
+1545046011791	mozprofile::profile	INFO	Using profile path C:\Users\mhf\AppData\Local\Temp\rust_mozprofile.3twZx1wxXQaX
+1545046011812	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox45\firefox.exe with args []
+1545046011866	geckodriver::marionette	INFO	Connecting to Marionette on localhost:54640
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs
+JavaScript error: https://www.hongkunjinfu.com/, line 207: ReferenceError: clickclose is not defined
+1545046015129 Marionette: Element is missing an accesible name -> id: login, tagName: INPUT, className: login_input
+1545046015282 Marionette: Element does not have a correct accessibility role and may not be manipulated via the accessibility API -> id: password, tagName: INPUT, className: login_input
+1545046015324 Marionette: Element does not have a correct accessibility role and may not be manipulated via the accessibility API -> id: , tagName: DIV, className: login_button login_gradient
+JavaScript error: https://www.hongkunjinfu.com/index.do?method=getIndexPage, line 207: ReferenceError: clickclose is not defined
